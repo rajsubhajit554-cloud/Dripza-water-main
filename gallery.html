@@ -110,34 +110,6 @@ section{padding:70px 5%}
   opacity: 0.3;
 }
 
-/* UPLOAD INSTRUCTION BOX */
-.upload-instruction {
-  background: var(--gray);
-  border: 1px dashed var(--blue);
-  border-radius: 12px;
-  padding: 24px;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-.upload-instruction h4 {
-  font-size: 16px;
-  color: var(--navy);
-  margin-bottom: 8px;
-}
-.upload-instruction p {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-.upload-instruction code {
-  background: #e8ecf0;
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: var(--blue2);
-  font-size: 13px;
-}
-
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.75);padding:50px 5% 28px}
 .footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px;max-width:1100px;margin:0 auto 36px}
@@ -219,11 +191,6 @@ footer ul li a:hover{color:#fff}
 <!-- FULL GALLERY SECTION -->
 <section id="full-gallery" style="background:#fff;">
   
-  <div class="upload-instruction">
-    <h4>How to add your images here?</h4>
-    <p>Upload your image files to the <code>assets</code> folder. Then, edit this <code>gallery.html</code> file and update the <code>src="..."</code> inside the <code>&lt;img&gt;</code> tags below with your image filenames (e.g., <code>src="./assets/my_new_photo.jpg"</code>). You can copy and paste the gallery items to add as many images as you want.</p>
-  </div>
-
   <div class="full-gallery-grid">
     
     <!-- Image Item 1 -->
@@ -235,8 +202,8 @@ footer ul li a:hover{color:#fff}
 
     <!-- Image Item 2 -->
     <div class="full-gallery-item">
-      <!-- Replace src with your image path -->
-      <img src="./assets/placeholder.jpg" alt="Gallery Image 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <!-- Refresh Cafe Bottle -->
+      <img src="./assets/refresh_cafe.jpg" alt="Refresh Cafe Bottle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
       <span class="placeholder-img" style="display:none;">🖼️</span>
     </div>
 
