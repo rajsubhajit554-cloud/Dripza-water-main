@@ -187,6 +187,18 @@ footer ul li a:hover{color:#fff}
 .price-card.show-card {
   animation: cardFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+.price-features li.sub-item {
+  display: block;
+  padding: 2px 0 2px 16px !important;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.price-features li.sub-item::before {
+  content: none !important;
+}
+.price-card.featured .price-features li.sub-item {
+  color: rgba(255, 255, 255, 0.9);
+}
 
 @media(max-width:600px){
   .filter-wrapper {
@@ -267,70 +279,71 @@ footer ul li a:hover{color:#fff}
   </div>
 
   <div class="pricing-grid">
-    
+
     <!-- Wedding Standard Package -->
     <div class="price-card" data-category="wedding">
+      <div class="best-badge" style="background: linear-gradient(135deg, #ff6b8b 0%, #ff8e53 100%); color: #fff;">💒 WEDDING SPECIAL</div>
       <div class="price-name">STANDARD PACKAGE</div>
-      <div class="price-qty">Per Peti (24 Bottles)</div>
-      <div class="price-amount"><span>₹</span>249</div>
+      <div class="price-qty">Min Order: 5 Peti (120 Bottles)</div>
+      <div class="price-amount"><span>₹</span>249<span style="font-size: 16px; font-family: 'Nunito', sans-serif; font-weight: normal; text-transform: lowercase; opacity: 0.85;">/peti</span></div>
       <ul class="price-features">
         <li>Custom Text</li>
         <li>Standard Design</li>
-        <li>Single Event Design</li>
-        <li>Wedding / Reception যেকোনো ১টা</li>
-        <li>Standard QR Code</li>
-        <li>Thank You Poster ✔️</li>
-        <li>Social Media Page</li>
-        <li>Poster / Photo</li>
-        <li style="color:var(--cyan); font-weight:700;">Min Order: 5 Peti (120 Bottles)</li>
+        <li>Single Event Design (Wedding / Reception যেকোনো ১টা)</li>
+        <li>Standard QR Code Options:</li>
+        <li class="sub-item">• Thank You Poster ✔️</li>
+        <li class="sub-item">• Social Media Page</li>
+        <li class="sub-item">• Poster / Photo</li>
       </ul>
       <button class="btn-order btn-order-outline" onclick="window.open('https://wa.me/919876543210','_blank')">ORDER NOW</button>
     </div>
 
     <!-- Wedding Premium Package -->
     <div class="price-card featured" data-category="wedding">
-      <div class="best-badge">⭐ POPULAR</div>
+      <div class="best-badge" style="background: linear-gradient(135deg, #ff4081 0%, #ff80ab 100%); color: #fff;">⭐ FEATURED WEDDING</div>
       <div class="price-name">PREMIUM PACKAGE</div>
-      <div class="price-qty">Per Peti (24 Bottles)</div>
-      <div class="price-amount"><span>₹</span>299</div>
+      <div class="price-qty">Min Order: 5 Peti (120 Bottles)</div>
+      <div class="price-amount"><span>₹</span>299<span style="font-size: 16px; font-family: 'Nunito', sans-serif; font-weight: normal; text-transform: lowercase; opacity: 0.85;">/peti</span></div>
       <ul class="price-features">
         <li>Custom Text</li>
         <li>Premium Design</li>
-        <li>Multiple Event Designs</li>
-        <li>Engagement, Haldi</li>
-        <li>Wedding / Reception যেকোনো ১টা</li>
-        <li>PREMIUM QR CODE</li>
-        <li>Thank You Poster</li>
-        <li>Custom Video</li>
-        <li>Drive Album</li>
-        <li>Social Media Page</li>
-        <li>Poster / Photo</li>
-        <li>Special Message QR Web</li>
-        <li style="color:#fff; font-weight:700;">Min Order: 5 Peti (120 Bottles)</li>
+        <li>Multiple Event Designs:</li>
+        <li class="sub-item">• Engagement</li>
+        <li class="sub-item">• Haldi</li>
+        <li class="sub-item">• Wedding / Reception যেকোনো ১টা</li>
+        <li>PREMIUM QR CODE OPTIONS:</li>
+        <li class="sub-item">• Thank You Poster</li>
+        <li class="sub-item">• Custom Video</li>
+        <li class="sub-item">• Drive Album</li>
+        <li class="sub-item">• Social Media</li>
+        <li class="sub-item">• Poster / Photo</li>
+        <li class="sub-item">• Special Message QR Web</li>
       </ul>
       <button class="btn-order btn-order-white" onclick="window.open('https://wa.me/919876543210','_blank')">ORDER NOW</button>
     </div>
 
     <!-- Wedding Luxury Package -->
     <div class="price-card" data-category="wedding">
+      <div class="best-badge" style="background: linear-gradient(135deg, #7b2ff7 0%, #1199fa 100%); color: #fff;">💎 LUXURY WEDDING</div>
       <div class="price-name">LUXURY PACKAGE</div>
-      <div class="price-qty">Per Peti (24 Bottles)</div>
-      <div class="price-amount"><span>₹</span>399</div>
+      <div class="price-qty">Min Order: 10 Peti (240 Bottles)</div>
+      <div class="price-amount"><span>₹</span>399<span style="font-size: 16px; font-family: 'Nunito', sans-serif; font-weight: normal; text-transform: lowercase; opacity: 0.85;">/peti</span></div>
       <ul class="price-features">
         <li>Custom Text</li>
         <li>Premium Luxury Design</li>
-        <li>Multiple Event Design</li>
-        <li>Ashirbad, Engagement</li>
-        <li>Mehendi, Haldi</li>
-        <li>Wedding / Reception যেকোনো ১টা</li>
-        <li>Premium QR Experience</li>
-        <li>Thank You Poster</li>
-        <li>Custom Video</li>
-        <li>Drive Album</li>
-        <li>Social Media Page</li>
-        <li>Poster / Photo</li>
-        <li>Special Message QR Web With Social Media</li>
-        <li style="color:var(--cyan); font-weight:700;">Min Order: 10 Peti (240 Bottles)</li>
+        <li>Multiple Event Design:</li>
+        <li class="sub-item">• Ashirbad</li>
+        <li class="sub-item">• Engagement</li>
+        <li class="sub-item">• Mehendi</li>
+        <li class="sub-item">• Haldi</li>
+        <li class="sub-item">• Wedding / Reception যেকোনো ১টা</li>
+        <li>Premium QR Experience Options:</li>
+        <li class="sub-item">• Thank You Poster</li>
+        <li class="sub-item">• Custom Video</li>
+        <li class="sub-item">• Drive Album</li>
+        <li class="sub-item">• Social Media Page</li>
+        <li class="sub-item">• Poster / Photo</li>
+        <li class="sub-item">• Special Message QR Web Whith Your Social Media Page</li>
       </ul>
       <button class="btn-order btn-order-outline" onclick="window.open('https://wa.me/919876543210','_blank')">ORDER NOW</button>
     </div>
@@ -350,7 +363,7 @@ footer ul li a:hover{color:#fff}
     </div>
 
     <!-- Package 2 -->
-    <div class="price-card featured" data-category="birthday">
+    <div class="price-card featured" data-category="wedding birthday">
       <div class="best-badge">⭐ BEST SELLER</div>
       <div class="price-name">BUSINESS</div>
       <div class="price-qty">100 Bottles</div>
@@ -365,7 +378,7 @@ footer ul li a:hover{color:#fff}
     </div>
 
     <!-- Package 3 -->
-    <div class="price-card" data-category="birthday">
+    <div class="price-card" data-category="wedding birthday">
       <div class="price-name">PREMIUM</div>
       <div class="price-qty">250 Bottles</div>
       <div class="price-amount"><span>₹</span>1999</div>
@@ -380,7 +393,7 @@ footer ul li a:hover{color:#fff}
     </div>
 
     <!-- Package 4 (Placeholder) -->
-    <div class="price-card" data-category="">
+    <div class="price-card" data-category="wedding">
       <div class="price-name">MEGA PACK</div>
       <div class="price-qty">500 Bottles</div>
       <div class="price-amount"><span>₹</span>3899</div>
@@ -395,7 +408,7 @@ footer ul li a:hover{color:#fff}
     </div>
 
     <!-- Package 5 (Placeholder) -->
-    <div class="price-card" data-category="">
+    <div class="price-card" data-category="wedding">
       <div class="price-name">EVENT SPECIAL</div>
       <div class="price-qty">1000 Bottles</div>
       <div class="price-amount"><span>₹</span>7499</div>
